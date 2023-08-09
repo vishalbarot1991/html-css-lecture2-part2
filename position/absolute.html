@@ -5,11 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        .grandparent{
+            background-color: gray;
+            width: 512px;
+            height: 512px;
+            position: relative;
+        }
         .parent{
             background-color: black;
             width: 256px;
             height: 256px;
-            position: relative;
+          /*  position: relative;*/
         }
         .child1{
             background-color: red;
@@ -40,10 +46,12 @@
     </style>
 </head>
 <body>
+    <div class="grandparent">
     <div  class="parent">
         <div class="child1"></div>
         <div class="child2"></div>
         <div class="child3"></div>
+    </div>
     </div>
 
 </body>
